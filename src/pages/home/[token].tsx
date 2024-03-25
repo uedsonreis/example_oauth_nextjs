@@ -28,12 +28,10 @@ export default function HomePage() {
     return (
         <>
             <main className={`${styles.main}`}>
-
                 <div className={styles.description}>
                     <span>Usuário: {user?.name}</span>
                     <span>E-mail: {user?.email}</span>
                 </div>
-
             </main>
         </>
     )
