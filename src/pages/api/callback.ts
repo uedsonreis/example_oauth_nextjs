@@ -9,9 +9,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
     const code = req.query['code']
 
-    if (code) console.log('Código de verificação recebido')
-    else console.log('Falha na solicitação da permissão')
-
     fetch(github_server_auth, {
         method: 'POST',
         headers: {
